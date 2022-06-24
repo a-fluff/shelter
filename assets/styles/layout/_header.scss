@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  padding: 60px 0;
+  position: absolute;
+  z-index: 100;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+
+		&__title {
+      @include h-fonts(32px, $color-primary);
+      line-height: 110%;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+		}
+
+		&__subtitle {
+      @include paragraph-fonts(13px, $color-light-xl);
+      letter-spacing: 0.1em;
+		}
+}
+.menu {
+
+		&__list {
+      display: flex;
+		}
+
+		&__item {
+      border-bottom: 3px solid transparent;
+
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+
+      &:hover {
+        border-bottom: 3px solid $color-primary;
+      }
+
+      &:first-child {
+        border-bottom: 3px solid $color-primary;
+      }
+		}
+
+		&__link {
+      @include paragraph-fonts($paragraph-l, $color-dark-s);
+      line-height: 160%;
+
+      &:hover {
+        color: $color-light-s;
+      }
+
+      &:first-child {
+        color: $color-light-s;
+      }
+		}
+}

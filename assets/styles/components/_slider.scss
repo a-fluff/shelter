@@ -1,0 +1,67 @@
+.btn--left, .btn--right {
+  border: 2px solid $color-primary;
+  border-radius: 50%;
+  padding: 19px 23px;
+  position: absolute;
+  top: 50%;
+
+    &:hover {
+      background-color: $color-primary-light;
+    }
+
+    &::after {
+      content: url("../../assets/icons/arrow.svg");
+      height: 6px;
+    }
+}
+.btn--left {
+  left: 0;
+}
+.btn--right {
+  right: 0;
+  transform: rotate(-180deg);
+}
+.slider {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  position: relative;
+
+  &__pagination {
+
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    background-color: $color-light-s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+
+        .btn--slider {
+          background-color: $color-primary-light;
+        }
+    }
+  }
+}
+.pet {
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    @include h-fonts($h4, $color-dark-l);
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+}
+.btn--slider {
+  margin: 30px 0 30px;
+}

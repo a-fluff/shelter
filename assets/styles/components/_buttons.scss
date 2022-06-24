@@ -1,0 +1,29 @@
+.btn {
+  background-color: $color-primary;
+  border-radius: 100px;
+  padding: 15px 45px;
+  border: none;
+
+  @include h-fonts(17px, $color-dark-3xl);
+  letter-spacing: 0.06em;
+  line-height: 130%;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  &--slider {
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    border-radius: 100px;
+
+    &:hover {
+      background-color: $color-primary-light;
+    }
+  }
+
+  &--pet {
+    display: block;
+    margin: 0 auto;
+  }
+}

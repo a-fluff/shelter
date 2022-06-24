@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/Georgia.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/ArialMT.woff') format('woff');
+}
+
+@mixin h-fonts($size, $color) {
+  @include fonts('Georgia', $size, $color);
+}
+
+@mixin paragraph-fonts($size, $color) {
+  @include fonts('Arial', $size, $color);
+}
