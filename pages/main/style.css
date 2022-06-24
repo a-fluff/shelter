@@ -439,6 +439,10 @@ textarea {
   margin-right: 35px;
 }
 .menu__item:hover {
+  color: #FAFAFA;
+}
+.menu__item:active {
+  color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
 }
 .menu__item:first-child {
