@@ -4,9 +4,141 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our pets</title>
+  <title>Cozy House - our pets</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo" onclick="window.location.href='../main/index.html'">
+        <h1 class="logo__title">Cozy House</h1>
+        <p class="logo__subtitle">Shelter for pets in Boston</p>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="../main/index.html" class="menu__link">About the shelter</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Our pets</a>
+          </li>
+          <li class="menu__item">
+            <a href="../main/index.html#help" class="menu__link">Help the shelter</a>
+          </li>
+          <li class="menu__item">
+            <a href="#footer" class="menu__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section id="pets" class="pets">
+      <div class="container pets__container">
+        <h2 class="section-title section-title--pets">
+          Our friends who<br>are looking for a house
+        </h2>
+        <div class="slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <img src="../../assets/images/pets-katrine.png" alt="" class="pet__img">
+              <p class="pet__name">
+                Katrine
+              </p>
+              <button class="btn btn--slider">Learn more</button>
+            </li>
+            <li class="slider__item">
+              <img src="../../assets/images/pets-jennifer.png" alt="" class="pet__img">
+              <p class="pet__name">
+                Jennifer
+              </p>
+              <button class="btn btn--slider">Learn more</button>
+            </li>
+            <li class="slider__item">
+              <img src="../../assets/images/pets-woody.png" alt="" class="pet__img">
+              <p class="pet__name">
+                Woody
+              </p>
+              <button class="btn btn--slider">Learn more</button>
+            </li>
+            <li class="slider__item">
+              <img src="../../assets/images/pets-sofia.png" alt="" class="pet__img">
+              <p class="pet__name">
+                Sophia
+              </p>
+              <button class="btn btn--slider">Learn more</button>
+            </li>
+            <li class="slider__item">
+              <img src="../../assets/images/pets-timmy.png" alt="" class="pet__img">
+              <p class="pet__name">
+                Timmy
+              </p>
+              <button class="btn btn--slider">Learn more</button>
+            </li>
+            <li class="slider__item">
+              <img src="../../assets/images/pets-charly.png" alt="" class="pet__img">
+              <p class="pet__name">
+                Charly
+              </p>
+              <button class="btn btn--slider">Learn more</button>
+            </li>
+            <li class="slider__item">
+              <img src="../../assets/images/pets-scarlet.png" alt="" class="pet__img">
+              <p class="pet__name">
+                Scarlett
+              </p>
+              <button class="btn btn--slider">Learn more</button>
+            </li>
+            <li class="slider__item">
+              <img src="../../assets/images/pets-freddie.png" alt="" class="pet__img">
+              <p class="pet__name">
+                Freddie
+              </p>
+              <button class="btn btn--slider">Learn more</button>
+            </li>
+          </ul>
+          <div class="slider__pagination">
+            <button disabled data-disabled class="pagination__btn pagination__btn--disabled" href="#">&#60;&#60;</button>
+            <button disabled data-disabled class="pagination__btn pagination__btn--disabled" href="#">&#60;</button>
+            <button class="pagination__btn pagination__btn pagination__btn--number" href="#">1</button>
+            <button class="pagination__btn pagination__btn--active" href="#">&#62;</button>
+            <button class="pagination__btn pagination__btn--active" href="#">&#62;&#62;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer">
+    <div class="container footer__container">
+      <div class="contact__wrapper">
+        <h3 class="contact__title">
+          For questions and suggestions
+        </h3>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <a class="contact__mail" href="mailto:email@shelter.com">email@shelter.com</a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__tel" href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
+          </li>
+        </ul>
+      </div>
+      <div class="adress__wrapper">
+        <h3 class="adress__title">
+          We are waiting for your visit
+        </h3>
+        <ul class="adress__list">
+          <li class="adress__item"><a target="_blank" href="https://www.google.com/maps/place/Boston,+MA,+USA/@42.3143499,-70.970284,11z/data=!4m2!3m1!1s0x89e3652d0d3d311b:0x787cbf240162e8a0">
+            1 Central Street, Boston (entrance from the store)
+          </a></li>
+          <li class="adress__item">
+            <a target="_blank" href="https://www.google.com/maps/place/Boston,+MA,+USA/@42.3143499,-70.970284,11z/data=!4m2!3m1!1s0x89e3652d0d3d311b:0x787cbf240162e8a0">
+              18 South Park, London
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
