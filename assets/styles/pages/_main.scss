@@ -12,10 +12,7 @@
 }
 a {
   text-decoration: none;
-
-    &:focus, &:active, &:visited {
-      color: inherit;
-    }
+  color: inherit;
 }
 header, footer {
   flex: 0 0 auto;
@@ -127,7 +124,8 @@ section {
   &--main {
     max-width: 310px;
     margin-bottom: 42px;
-    @include h-fonts($h2, $color-light-xl);
+    font-size: $h2;
+    color: $color-light-xl;
     letter-spacing: 0;
 
     @media (max-width: $screen-md) {
@@ -164,9 +162,6 @@ section {
   }
 
   &--pets {
-    max-width: 400px;    
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 
     @media (max-width: $screen-md) {
@@ -179,7 +174,7 @@ section {
   line-height: 160%;
 
   &--main {
-    @include paragraph-fonts($paragraph-l, $color-dark-s);
+    color: $color-dark-s;
 
     @media (max-width: $screen-md) {
       text-align: center;
@@ -200,7 +195,8 @@ section {
 .about {
 
   &__container {
-    padding: 90px 0 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     display: flex;
     justify-content: center;
     align-items: center;

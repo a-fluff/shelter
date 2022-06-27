@@ -579,6 +579,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 9px;
 }
 .slider__item:hover {
   cursor: pointer;
@@ -788,8 +789,6 @@ textarea {
 
 a {
   text-decoration: none;
-}
-a:focus, a:active, a:visited {
   color: inherit;
 }
 
@@ -915,8 +914,6 @@ section:nth-child(2n+1) {
 .section-title--main {
   max-width: 310px;
   margin-bottom: 42px;
-  font-family: "Georgia";
-  font-weight: 400;
   font-size: 44px;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -954,9 +951,6 @@ section:nth-child(2n+1) {
   }
 }
 .section-title--pets {
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -973,9 +967,6 @@ section:nth-child(2n+1) {
   line-height: 160%;
 }
 .subtitle--main {
-  font-family: "Arial";
-  font-weight: 400;
-  font-size: 15px;
   color: #CDCDCD;
 }
 @media (max-width: 767px) {
@@ -991,7 +982,8 @@ section:nth-child(2n+1) {
 }
 
 .about__container {
-  padding: 90px 0 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
