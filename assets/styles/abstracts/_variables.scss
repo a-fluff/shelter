@@ -12,7 +12,13 @@ $color-primary-light: #FDDCC4;
 
 $h2: 44px;
 $h3: 35px;
+$h3-mobile: 25px;
 $h4: 20px;
 $h5: 15px;
 $paragraph-l: 15px;
 $paragraph-s: 12px;
+
+//breakpoints
+$screen-lg: 1279px;
+$screen-md: 767px;
+$screen-sm: 319px;

@@ -1,19 +1,48 @@
 .footer {
   background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+
+  &__bcg {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+
+    @media (min-width: $screen-sm) and (max-width: $screen-lg), (max-width: $screen-sm) {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      right: 0;
+      margin-top: 65px;
+    }
+
+    @media (max-width: 400px) {
+      img {
+        max-width: 300px;
+        width: 80%;
+      }
+    }
+  }
+  &__wrapper {    
+    display: flex;
+    justify-content: flex-start;
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+      justify-content: space-around;
+    }
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 #footer .footer__container {
-  display: flex;
-  justify-content: flex-start;
   position: relative;
   padding-top: 56px;
   padding-bottom: 60px;
 
-  &::before {
-    content: url("../../assets/images/footer-puppy.svg");
-    height: 310px;
-    position: absolute;
-    bottom: 0;
-    right: 40px;
+  @media (min-width: $screen-sm) and (max-width: $screen-lg), (max-width: $screen-sm) {
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 }
 .contact {
@@ -21,10 +50,17 @@
 		&__wrapper {
       max-width: 280px;
       margin-right: 160px;
+
+      @media (min-width: $screen-sm) and (max-width: $screen-lg), (max-width: $screen-sm) {
+        margin-right: 0;
+      }
 		}
 
 
 		&__list {
+      @media (max-width: $screen-md) {
+        margin-bottom: 40px;
+      }
 		}
 
 		&__item {
@@ -81,18 +117,42 @@
   @include h-fonts($h3, $color-light-xl);
   line-height: 130%;
   letter-spacing: 0.06em;
+
+  @media (max-width: $screen-md) {
+    font-size: $h3-mobile;
+    text-align: center;
+  }
 }
 .contact__title {
   margin-bottom: 46px;
 }
 .contact__item:first-child {
   margin-bottom: 48px;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 44px;
+  }
 }
 .adress__title {
   margin-bottom: 34px;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 40px;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .adress__item:first-child {
   margin-bottom: 32px;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 33px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 40px;
+  }  
 }
 .contact__item *, .adress__item {
   @include h-fonts($h4, $color-primary);

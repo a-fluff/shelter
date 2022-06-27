@@ -12,6 +12,13 @@
     background-color: $color-primary-light;
   }
 
+  &--main {
+    @media (max-width: 990px) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
   &--slider {
     border: 2px solid $color-primary;
     background-color: transparent;

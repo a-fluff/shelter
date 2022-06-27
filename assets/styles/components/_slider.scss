@@ -1,7 +1,8 @@
 .btn--left, .btn--right {
   border: 2px solid $color-primary;
   border-radius: 50%;
-  padding: 19px 23px;
+  width: 52px;
+  height: 52px;
   position: absolute;
   top: 50%;
 
@@ -13,26 +14,48 @@
       content: url("../../assets/icons/arrow.svg");
       height: 6px;
     }
+
+    @media (max-width: $screen-md) {
+      top: 100%;
+    }
 }
 .btn--left {
   left: 0;
+
+  @media (max-width: $screen-md) {
+    left: 58px;
+  }
 }
 .btn--right {
   right: 0;
   transform: rotate(-180deg);
+
+  @media (max-width: $screen-md) {
+    right: 58px;
+  }
 }
 .slider {
   margin: 0 auto;
   margin-bottom: 60px;
   position: relative;
 
-  &__pagination {
+  @media (max-width: $screen-md) {
+    margin-bottom: 102px;
+  }
 
+  &__pagination {
+    @media (max-width: $screen-md) {
+      height: 20px;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-evenly;
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+      justify-content: center;
+    } 
   }
 
   &__item {
@@ -47,6 +70,25 @@
         .btn--slider {
           background-color: $color-primary-light;
         }
+    }
+
+    @media (min-width: $screen-sm) and (max-width: $screen-lg), (max-width: $screen-sm) {
+      &:first-child {
+        margin-right: 40px;
+      }
+
+      &:nth-child(3) {
+        display: none;
+      }
+    }  
+    @media (max-width: $screen-md) {
+      &:first-child {
+        margin-right: 0;
+      }
+      
+      &:nth-child(2) {
+        display: none;
+      }
     }
   }
 }

@@ -14,7 +14,7 @@
         <h1 class="logo__title">Cozy House</h1>
         <p class="logo__subtitle">Shelter for pets in Boston</p>
       </div>
-      <nav class="menu">
+      <nav class="menu menu--open menu--close">
         <ul class="menu__list">
           <li class="menu__item">
             <a href="" class="menu__link">About the shelter</a>
@@ -30,19 +30,25 @@
           </li>
         </ul>
       </nav>
+      <div class="burger">
+        <span></span>
+      </div>
     </div>
   </header>
   <main class="main">
     <section class="start-screen">
       <div class="container start-screen__container">
-        <h2 class="section-title section-title--main">
-          Not only people need a house
-        </h2>
-        <p class="subtitle subtitle--main">
-          We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
-          He or she will love you more than anybody else in the world, you will see!
-        </p>
-        <button class="btn" onclick="window.location.href='#pets'" >Make a friend</button>
+        <img class="start-screen__bcg" src="../../assets/images/start-screen-puppy.png" alt="">
+        <div class="start-screen__wrapper">
+          <h2 class="section-title section-title--main">
+            Not only people need a house
+          </h2>
+          <p class="subtitle subtitle--main">
+            We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
+            He or she will love you more than anybody else in the world, you will see!
+          </p>
+        </div>
+        <button class="btn btn--main" onclick="window.location.href='#pets'" >Make a friend</button>
       </div>
     </section>
     <section class="about">
@@ -75,10 +81,6 @@
           Our friends who<br>are looking for a house
         </h2>
         <div class="slider">
-          <div class="slider__pagination">
-            <button class="btn--left"></button>
-            <button class="btn--right"></button>
-          </div>
           <ul class="slider__list">
             <li class="slider__item">
               <img src="../../assets/images/pets-katrine.png" alt="" class="pet__img">
@@ -102,6 +104,10 @@
               <button class="btn btn--slider">Learn more</button>
             </li>
           </ul>
+          <div class="slider__pagination">
+            <button class="btn--left"></button>
+            <button class="btn--right"></button>
+          </div>
         </div>
         <button class="btn btn--pet" onclick="window.location.href='../pets/index.html'">Get to know the rest</button>
       </div>
@@ -200,33 +206,38 @@
   </main>
   <footer id="footer" class="footer">
     <div class="container footer__container">
-      <div class="contact__wrapper">
-        <h3 class="contact__title">
-          For questions and suggestions
-        </h3>
-        <ul class="contact__list">
-          <li class="contact__item">
-            <a class="contact__mail" href="mailto:email@shelter.com">email@shelter.com</a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__tel" href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
-          </li>
-        </ul>
+      <div class="footer__wrapper">
+        <div class="contact__wrapper">
+          <h3 class="contact__title">
+            For questions and suggestions
+          </h3>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a class="contact__mail" href="mailto:email@shelter.com">email@shelter.com</a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__tel" href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
+            </li>
+          </ul>
+        </div>
+        <div class="adress__wrapper">
+          <h3 class="adress__title">
+            We are waiting for your visit
+          </h3>
+          <ul class="adress__list">
+            <li class="adress__item"><a target="_blank" href="https://www.google.com/maps/place/Boston,+MA,+USA/@42.3143499,-70.970284,11z/data=!4m2!3m1!1s0x89e3652d0d3d311b:0x787cbf240162e8a0">
+              1 Central Street, Boston (entrance from the store)
+            </a></li>
+            <li class="adress__item">
+              <a target="_blank" href="https://www.google.com/maps/place/Boston,+MA,+USA/@42.3143499,-70.970284,11z/data=!4m2!3m1!1s0x89e3652d0d3d311b:0x787cbf240162e8a0">
+                18 South Park, London
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="adress__wrapper">
-        <h3 class="adress__title">
-          We are waiting for your visit
-        </h3>
-        <ul class="adress__list">
-          <li class="adress__item"><a target="_blank" href="https://www.google.com/maps/place/Boston,+MA,+USA/@42.3143499,-70.970284,11z/data=!4m2!3m1!1s0x89e3652d0d3d311b:0x787cbf240162e8a0">
-            1 Central Street, Boston (entrance from the store)
-          </a></li>
-          <li class="adress__item">
-            <a target="_blank" href="https://www.google.com/maps/place/Boston,+MA,+USA/@42.3143499,-70.970284,11z/data=!4m2!3m1!1s0x89e3652d0d3d311b:0x787cbf240162e8a0">
-              18 South Park, London
-            </a>
-          </li>
-        </ul>
+      <div class="footer__bcg">
+        <img src="../../assets/images/footer-puppy.svg" alt="">
       </div>
     </div>
   </footer>
